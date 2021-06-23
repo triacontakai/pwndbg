@@ -19,6 +19,7 @@ osx() {
 }
 
 install_apt() {
+    echo "no apt stuff haha"
     #sudo apt-get update || true
     #sudo apt-get install -y git gdb python3-dev python3-pip python3-setuptools libglib2.0-dev libc6-dbg
 
