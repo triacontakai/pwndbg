@@ -19,16 +19,14 @@ osx() {
 }
 
 install_apt() {
-    """
-    sudo apt-get update || true
-    sudo apt-get install -y git gdb python3-dev python3-pip python3-setuptools libglib2.0-dev libc6-dbg
+    #sudo apt-get update || true
+    #sudo apt-get install -y git gdb python3-dev python3-pip python3-setuptools libglib2.0-dev libc6-dbg
 
-    if uname -m | grep x86_64 > /dev/null; then
-        sudo dpkg --add-architecture i386 || true
-        sudo apt-get update || true
-        sudo apt-get install -y libc6-dbg libc6-dbg:i386 || true
-    fi
-    """
+    #if uname -m | grep x86_64 > /dev/null; then
+    #    sudo dpkg --add-architecture i386 || true
+    #    sudo apt-get update || true
+    #    sudo apt-get install -y libc6-dbg libc6-dbg:i386 || true
+    #fi
 }
 
 install_dnf() {
